@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_larning_project/assignment/assignment_profile.dart';
+import 'package:flutter_larning_project/screen/button_show.dart';
 import 'package:flutter_larning_project/screen/home_page.dart';
 import 'package:flutter_larning_project/screen/login.dart';
 
@@ -21,7 +22,10 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home:  AssignmentProfile(),
+      home:  Scaffold(
+        body: ShowCustomWidget(),
+      )
+
     );
       // ;
   }
